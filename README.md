@@ -27,3 +27,8 @@ The p value of 0.61 once again failing to reject our null hypothesis, showing th
 Finally, for Lot 3 we get the following results:
 ![TTest-Lot3](https://user-images.githubusercontent.com/85318060/135922449-5b33b275-c03d-426f-950a-626e7db71ef6.png)
 In this case our p value is 0.042, which is less than our 0.05 confidence interval. In this case we can reject our null hypothesis and we know that the mean of lot 3 is significantly different than the population mean of 1500.
+
+## Study Design: MechaCar vs Competition
+The metrics that I would test when comparing the MechaCar with it's competition are cost and city fuel efficiency. I think these would be two metrics that would be of interest to consumers buying the cars. The null hypothesis for each would be that there is no statistical difference between the cost or between the city mpg of MechaCar and it's competitors.
+To test this hypothesis I would use the 2-sample t-test for each metric. In this example we would have two different samples of data and we would be testing to find a difference between those two different samples. Since both cost and city mpg would be categorical data, the 2-sample t-test would be the way to go.
+In order to run this test we would need examples of both cost and city fuel efficiency from a selection of MechaCars, as well as the same data from a collection of the competitors cars. Once we had all of the data available we could perform the 2-sample t-test and determine if the values for MechaCar were significantly different than the values from the competitor cars.
