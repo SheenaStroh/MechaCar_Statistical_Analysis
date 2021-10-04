@@ -11,3 +11,19 @@ According to this data the intercept, vehicle length, and ground clearance provi
 ## Summary Statistics on Suspension Coils
 
 When looking at the dataset as a whole, the variance is around 62 PSI, which is within the design specification of being less than 100 PSI, even taking into account the standard deviation. However, when you break down the data by lot, it becomes apparent that while Lot 1 and Lot 2 meet the specification, with variances of 1 and 7.5 PSI respectively, Lot 3 does not. Lot 3 has a variance of 170.3 PSI, which is significantly higher than the specification of less than 100.
+
+## T-Tests on Suspension Coils
+
+When performing T-tests on these samples we are looking at the null hypothesis that says the true mean does not equal the population value of 1500 PSI. For each test we have to look at the p-value and determine if we can reject the null hypothesis or not.
+When looking at the entire dataset we get the following results:
+![TTest-total](https://user-images.githubusercontent.com/85318060/135921591-b73a518e-2544-4608-8d6a-faef94af3628.png)
+This p value is 0.06, which is higher than the 0.05 confidence interval, therefore we fail to reject the null hypothesis and we can say that our mean PSI is not significantly different than the population total of 1500 PSI.
+For Lot 1 we get the following results:
+![TTest-Lot1](https://user-images.githubusercontent.com/85318060/135922146-051e25fd-5e51-432f-95e5-bc8e62e1dfc1.png)
+Here the p value is 1, which again leaves us failing to reject the null hypothesis. This tells us the mean is not significantly different than 1500 PSI.
+For Lot 2 we get the following results:
+![TTest-Lot2](https://user-images.githubusercontent.com/85318060/135922313-15901479-4e69-4e0c-b6a5-61d9ff7c1561.png)
+The p value of 0.61 once again failing to reject our null hypothesis, showing that the mean for Lot 2 is also not signifcantly different than the population mean of 1500.
+Finally, for Lot 3 we get the following results:
+![TTest-Lot3](https://user-images.githubusercontent.com/85318060/135922449-5b33b275-c03d-426f-950a-626e7db71ef6.png)
+In this case our p value is 0.042, which is less than our 0.05 confidence interval. In this case we can reject our null hypothesis and we know that the mean of lot 3 is significantly different than the population mean of 1500.
